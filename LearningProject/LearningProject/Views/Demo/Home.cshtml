@@ -1,0 +1,29 @@
+﻿@{
+    int x = 2;
+}
+
+<style>
+    p{
+        color:forestgreen;
+    }
+</style>
+<h1>x= @x</h1>
+
+
+@if(x % 2 == 0)
+{
+    <p class="text-danger">even number</p>
+}
+else
+{
+    <p>Odd Number</p>
+}
+
+@for( int r=0; r<10; r++)
+{
+    <p>r= @r</p>
+}
+
+<script>
+    alert("hi mvc");
+</script>

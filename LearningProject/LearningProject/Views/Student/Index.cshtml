@@ -1,0 +1,16 @@
+﻿
+
+<div class="d-flex gap-2 justify-content-center">
+    @foreach(var student in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/Images/@student.ImageUrl" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">@student.Name</h5>
+
+               
+            </div>
+        </div>
+    }
+
+</div>
