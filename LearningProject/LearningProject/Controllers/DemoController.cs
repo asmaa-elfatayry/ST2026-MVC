@@ -27,11 +27,18 @@ namespace LearningProject.Controllers
             return Json(new { Msg = "Hi MVC" });
 
         }
+
+        // redirect action 
+
+        public RedirectToActionResult GetRedirect()
+        {
+            return RedirectToAction("GetJson", "Demo");
+        }
         // redirect
 
-        public RedirectResult GetRedirect()
+        public RedirectResult GetRedirectToExternal()
         {
-            return Redirect("https://www.canva.com/design/DAHRI_cXpNY/iqSlVvSTECMIEMuz3rzKRw/edit");
+            return Redirect("https://www.google.com");
         }
         // view 
 
